@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1>Notes App</h1>
+            <label class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="notes-controls">
+            <input type="text" id="new-note" placeholder="Add a new note...">
+            <button id="add-btn" class="ripple">Add Note</button>
+            <button id="export-btn" class="ripple">Export Notes</button>
+            <button id="import-btn" class="ripple">Import Notes</button>
+            <input type="file" id="import-file" accept=".json" style="display: none;">
+        </div>
+        
+        <div class="notes-container" id="notes-container">
+            <div class="empty-state" id="empty-state">
+                No notes yet. Add your first note above!
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
